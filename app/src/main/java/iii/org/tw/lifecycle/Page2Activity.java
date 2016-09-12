@@ -8,13 +8,16 @@ import android.widget.TextView;
 
 public class Page2Activity extends AppCompatActivity {
     private TextView showText;
-
+    private MyApp myApp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_page2);
         Log.d("Abner","Page2onCreate");
 
+        myApp = (MyApp) getApplication();
+        Log.d("Abner","a=" + myApp.getA());
+        Log.d("Abner","b=" + myApp.getB());
         Intent intent = getIntent();
         String name = intent.getStringExtra("name");
         int stage = intent.getIntExtra("stage",2);

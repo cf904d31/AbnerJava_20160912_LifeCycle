@@ -7,9 +7,9 @@ import android.util.Log;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
-
+    private MyApp myApp;
     public MainActivity() {
-
+        Log.d("Abner","MainActivity");
     }
 
     @Override
@@ -18,7 +18,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Log.d("Abner","onCreate");
 
-
+        myApp = (MyApp) getApplication();
+        Log.d("Abner","a=" + myApp.getA());
+        Log.d("Abner","b=" + myApp.getB());
+        myApp.setA(123456);
+        myApp.setB("III");
     }
 
     @Override
