@@ -77,10 +77,22 @@ public class MainActivity extends AppCompatActivity {
         startActivityForResult(intent,87);
     }
 
+    public void goToPage3v2(View v) {
+        Intent intent = new Intent(this , Page3Activity.class);
+        startActivityForResult(intent,107);
+    }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        Log.d("Abner","onActivityResult");
+        if (requestCode==87) {
+            Log.d("Abner", "Page2onActivityResult:" + resultCode);
+            int a = data.getIntExtra("a", -1);
+            int b = data.getIntExtra("b", -1);
+            Log.d("Abner", "a=" + a + "b=" + b);
+        } else if (requestCode==107) {
+            Log.d("Abner", "Page3 Back:");
+        }
     }
 
     public void exit(View v) {

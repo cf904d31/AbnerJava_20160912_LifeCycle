@@ -14,7 +14,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="goToPage2v2"
-        android:text="GoTo Page return Result"/>
+        android:text="GoTo Page2 return Result"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="goToPage3v2"
+        android:text="GoTo Page3 return Result"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
