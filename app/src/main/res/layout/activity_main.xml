@@ -10,7 +10,16 @@
         android:layout_height="wrap_content"
         android:onClick="goToPage2"
         android:text="GoTo Page2"/>
-
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="goToPage2v2"
+        android:text="GoTo Page return Result"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="exit"
+        android:text="Exit"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
